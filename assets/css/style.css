@@ -1,0 +1,293 @@
+:root {
+	--font1: 'Georgia', Times, Times New Roman, serif;
+	--font2: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+
+	--fontC-Teal: #4aaaab;
+	--fontC-Regular: #777;
+
+	--myWidth:960px;
+}
+
+body{
+	background: url(../images/ignasi_pattern_s.png);
+    background-color: #ebebeb;
+}
+
+
+.container{
+	padding: 0;
+	margin: auto;
+	width: 100%;
+}
+
+#topNav_holder{
+	width: 100%;
+	background-color: #FFF;
+	border-bottom: 3px solid #ccc;
+}
+
+#topNav{
+	margin-left: auto;
+	margin-right: auto;
+	max-width: var(--myWidth);
+}
+
+h1{
+	margin:0;
+	background-color: var(--fontC-Teal);
+	color: #fff;
+	font-family: var(--font1);
+	font-size:30px;
+	font-weight: bold;
+	padding: 20px;
+	text-align: center;
+}
+
+#name{ padding: 0px; }
+
+
+
+/*NAVIGATION*/
+
+#navButtonHolder div{
+	font-family: var(--font2);
+	margin-top: 15px;
+}
+
+#navButton:not(.nav-active) {
+	padding: 25px;
+	color: #777 !important;
+	text-decoration: none;
+}
+
+#navButton:hover{
+	color:#4aaaa5 !important;
+	text-decoration: none;
+}
+
+#navButton:active:not(.nav-active){
+	color:#000 !important;
+	text-decoration: none;
+}
+
+.nav-active{
+    color: var(--fontC-Teal) !important;
+    cursor: default;
+    padding: 25px;
+	text-decoration: none !important;
+}
+
+
+
+/*MAIN CONTENT*/
+
+#contentHolder{
+	margin-left: auto;
+	margin-right: auto;
+	max-width: var(--myWidth);
+	margin-bottom: 165px;
+}
+
+#contentHolder div{
+	margin: 0;
+}
+
+h2{
+	margin:0;
+	color: var(--fontC-Teal);
+	font-family: var(--font1);
+	font-size:30px;
+	font-weight: bold;
+	padding: 20px;
+	text-align: left;
+	border-bottom:3px solid #ccc;
+}
+
+#mainContent{
+	background-color: #fff;
+	border:1px solid #ccc;
+	margin-top: 30px !important;
+}
+
+#mainContent img{
+	margin: 25px 25px 10px 0;
+	float: left;
+}
+
+#mainContent  p{
+	color: var(--fontC-Regular);
+	font-family: var(--font2);
+	line-height: 30px;
+	padding-bottom: 20px;
+	padding-top: 25px;
+}
+
+
+
+
+/*SIDEBAR CONTENT*/
+
+#sideContent{
+	background-color: #fff;
+	border:1px solid #ccc;
+	margin-top: 30px !important;
+}
+
+h3{
+	margin:0;
+	color: var(--fontC-Teal);
+	font-family: var(--font1);
+	font-size:18px;
+	font-weight: bold;
+	padding: 20px;
+	text-align: left;
+	border-bottom:3px solid #ccc;
+}
+
+#sideBar{
+	padding:20px 0;
+}
+
+#sideBar img{
+	height: 100%;
+	width: 100%;
+}
+
+
+
+/*FOOTER*/
+#footer_holder{
+	background-color: #666;
+	border-top: 8px solid var(--fontC-Teal);
+	bottom:0px;
+	color:#ccc;
+	font-family: var(--font2);
+	padding: 50px 25px;
+	position:fixed;
+	text-align: center;
+	width: 100%;
+}
+
+#footer{
+	margin-left: auto;
+	margin-right: auto;
+	max-width: var(--myWidth);
+}
+
+
+
+
+
+
+/*FORM*/
+#submit{
+	background: #4aaaa5;
+	font-size: 18px;
+	padding: 10px 20px;
+	margin-bottom: 25px;
+	border: 0px;
+	color:#fff;
+	cursor: pointer;
+}
+
+#submit:hover{
+	background: #fff;
+	color: #4aaaa5;
+	border: 1px solid #4aaaa5;
+	padding: 9px 19px;
+}
+
+#submit:active{
+	background: #000;
+	color: #4aaaa5;
+	border: 1px solid #4aaaa5;
+	padding: 9px 19px;
+}
+
+.in{
+	margin: 10px 0 30px 0;
+	padding: 10px;
+	color: #777;
+	font-size: 15px;
+	width: 100%;
+	border: 1px solid #ccc;
+}
+
+#messageInput{
+	margin: 10px 0 10px 0;
+	font-size: 15px;
+	border: 1px solid #ccc;
+	padding: 20px; 
+	height: 180px;
+	resize: vertical;
+	overflow: auto;
+	color: #ccc;
+}
+
+
+
+
+/*PORTFOLIO*/
+
+#portfolio div{
+	width: 100%;
+	height: 300px;
+	background: #333;
+	clear:both;
+	display: inline-flex;
+	overflow: hidden;
+	padding: 0;
+	margin: 5px 0 25px 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	cursor: pointer;
+	text-align: center;
+}
+
+#portfolio div:nth-of-type(1){
+	background-image: url("../images/p1.jpg");
+}
+
+#portfolio div:nth-of-type(2){
+	background-image: url("../images/p2.jpg");
+}
+
+#portfolio div:nth-of-type(3){
+	background-image: url("../images/p3.jpg");
+}
+
+#portfolio div:nth-of-type(4){
+	background-image: url("../images/p4.jpg");
+}
+
+#portfolio div:nth-of-type(5){
+	background-image: url("../images/p5.jpg");
+}
+
+#portfolio div:hover h4{
+	font-size: 25px;
+	padding: 12.5px 0;
+}
+
+#portfolio div:active{
+	-webkit-filter: grayscale(1);
+	filter: grayscale(1);
+}
+
+h4{
+	background: #4aaaa5;
+	color: #fff;
+	padding: 15px 0;
+	text-align: center;
+	width: 100%;
+	margin: auto;
+	margin-top:240px;
+	font-size: 20px;
+	opacity: .95;
+	-webkit-transition: font-size 0.5s, padding 0.5s;
+	transition: font-size 0.5s, padding 0.5s;
+	-moz-transition: font-size 0.5s, padding 0.5s;
+	-o-transition: font-size 0.5s, padding 0.5s;
+}
+
